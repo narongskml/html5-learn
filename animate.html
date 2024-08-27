@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML demo document">
+    <meta name="keywords" content="HTML">    
+    <title>HTML Learning</title>
+    <link  rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/atom-one-dark.min.css">
+    <script src="assets/js/highlight.min.js"></script>
+    <style>
+        .box {
+          width: 100px;
+          height: 100px;
+          background-color: red;
+          position: relative;
+          animation: move 2s infinite;
+          text-align: center;
+          color: white;
+        }    
+        @keyframes move {
+            0% { left: 0; }
+            50% { left: 100px; }
+            100% { left: 0; }
+        }
+        @keyframes slide {
+            0% {left: 0; top: 0; }
+            50% {left: 244px; top: 100px; }
+            100% { left: 488px;  top: 0;  }
+        }
+        .stage {
+            background: #eaeaed;
+            border-radius: 6px;
+            height: 150px;
+            position: relative;
+            min-width: 538px;
+        }
+        .stage:hover .ball {
+            animation: slide 2s linear;
+        }
+        .ball {
+            background: #2db34a;
+            border-radius: 50%;
+            height: 50px;
+            position: absolute;
+            width: 50px;
+        }
+       
+        main {
+            height: 700px;
+        }
+      </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#"> <img src="assets/imgs/html-logo.png" alt="logo" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="semantics.html">Semantics</a></li>
+                <li><a href="heading.html">Headings</a></li>
+                <li><a href="phrasing.html">Phrasing</a></li>
+                <li><a href="embedding.html">Embedding</a></li>
+                <li><a href="animate.html">Animate</a></li>
+                <li><a href="video.html">Video/Audio</a></li>
+                <li><a href="interactive.html">Interactive</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Animate</h1>
+        <div class="box"> Animate by CSS </div>
+        <div class="stage">
+            <figure class="ball"></figure>
+          </div>
+        <aside>
+           <pre><code>
+                 .box {
+                      width: 100px;
+                      height: 100px;
+                      background-color: red;
+                      position: relative;
+                      animation: move 2s infinite;
+                      text-align: center;
+                      color: white;
+                    }    
+                    @keyframes move {
+                        0% { left: 0; }
+                        50% { left: 100px; }
+                        100% { left: 0; }
+                    }
+                    @keyframes slide {
+                        0% {left: 0; top: 0; }
+                        50% {left: 244px; top: 100px; }
+                        100% { left: 488px;  top: 0;  }
+                    }
+                    .stage {
+                        background: #eaeaed;
+                        border-radius: 6px;
+                        height: 150px;
+                        position: relative;
+                        min-width: 538px;
+                    }
+                    .stage:hover .ball {
+                        animation: slide 2s linear;
+                    }
+                    .ball {
+                        background: #2db34a;
+                        border-radius: 50%;
+                        height: 50px;
+                        position: absolute;
+                        width: 50px;
+                    }   
+                </code>
+           </pre>
+        </aside>
+    </main>
+
+    <footer>
+        <h4>Footer</h4>
+        <p>
+            ©T-LIVE-CODE
+        </p>
+        
+    </footer>
+    <script>hljs.highlightAll();</script>
+</body></html>

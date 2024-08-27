@@ -1,0 +1,191 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML : Interactive">
+    <meta name="keywords" content="HTML">    
+    <title>HTML Learning: Interactive</title>
+    <link  rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/atom-one-dark.min.css">
+    <script src="assets/js/highlight.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"> <img src="assets/imgs/html-logo.png" alt="logo" class="logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="semantics.html">Semantics</a></li>
+                <li><a href="heading.html">Headings</a></li>
+                <li><a href="phrasing.html">Phrasing</a></li>
+                <li><a href="embedding.html">Embedding</a></li>
+                <li><a href="animate.html">Animate</a></li>
+                <li><a href="video.html">Video/Audio</a></li>
+                <li><a href="interactive.html">Interactive</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main >
+        <section>
+            <h1>
+                Interactive
+            </h1>
+                 
+            <!-- Interactive elements -->
+            <form>
+                <div class="form-group">
+                    <label for="textInput">Text Input:</label>
+                    <input type="text" id="textInput" class="form-control" placeholder="Enter some text">
+                </div>
+                
+                <div class="form-group">
+                    <label for="emailInput">Email Input:</label>
+                    <input type="email" id="emailInput" class="form-control" placeholder="Enter your email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="passwordInput">Password Input:</label>
+                    <input type="password" id="passwordInput" class="form-control" placeholder="Enter your password">
+                </div>
+                
+                <div class="form-group">
+                    <label for="textareaInput">Textarea:</label>
+                    <textarea id="textareaInput" class="form-control" rows="4" placeholder="Enter your message here"></textarea>
+                </div>
+                
+                <div class="form-group select-wrapper">
+                    <label for="selectInput">Select Input:</label>
+                    <select id="selectInput" class="form-control">
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Gender:</label><br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="man" value="man">
+                        <label class="form-check-label" for="man">Man</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="woman" value="woman">
+                        <label class="form-check-label" for="woman">Woman</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Checkbox:</label><br>
+                    <input type="checkbox" id="check1" value="1">                   
+                </div>
+                
+                <div class="form-group">
+                    <label for="colorInput">Color Picker:</label>
+                    <input type="color" id="colorInput" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for="dateInput">Date Picker:</label>
+                    <input type="date" id="dateInput" class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for="rangeInput">Range Slider:</label>
+                    <input type="range" id="rangeInput" min="0" max="100" class="form-control">
+                </div>   
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            
+            <details>
+                <summary>Click to see more details</summary>
+                <p>This is additional content hidden inside a &lt;details&gt; <br/>
+                element. Click on the summary to toggle visibility.</p>
+            </details>
+        </section>
+      <aside style="width: 65%;">
+        <pre>
+            <code class="language-html">  
+                &#x3C;form&#x3E;
+                &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+                    &#x3C;label for=&#x22;textInput&#x22;&#x3E;Text Input:&#x3C;/label&#x3E;
+                    &#x3C;input type=&#x22;text&#x22; id=&#x22;textInput&#x22; class=&#x22;form-control&#x22; placeholder=&#x22;Enter some text&#x22;&#x3E;
+                &#x3C;/div&#x3E;
+                
+                &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+                    &#x3C;label for=&#x22;emailInput&#x22;&#x3E;Email Input:&#x3C;/label&#x3E;
+                    &#x3C;input type=&#x22;email&#x22; id=&#x22;emailInput&#x22; class=&#x22;form-control&#x22; placeholder=&#x22;Enter your email&#x22;&#x3E;
+                &#x3C;/div&#x3E;
+                
+                &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+                    &#x3C;label for=&#x22;passwordInput&#x22;&#x3E;Password Input:&#x3C;/label&#x3E;
+                    &#x3C;input type=&#x22;password&#x22; id=&#x22;passwordInput&#x22; class=&#x22;form-control&#x22; placeholder=&#x22;Enter your password&#x22;&#x3E;
+                &#x3C;/div&#x3E;
+                
+                &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+                    &#x3C;label for=&#x22;textareaInput&#x22;&#x3E;Textarea:&#x3C;/label&#x3E;
+                    &#x3C;textarea id=&#x22;textareaInput&#x22; class=&#x22;form-control&#x22; rows=&#x22;4&#x22; placeholder=&#x22;Enter your message here&#x22;&#x3E;&#x3C;/textarea&#x3E;
+                &#x3C;/div&#x3E;
+                
+                &#x3C;div class=&#x22;form-group select-wrapper&#x22;&#x3E;
+                    &#x3C;label for=&#x22;selectInput&#x22;&#x3E;Select Input:&#x3C;/label&#x3E;
+                    &#x3C;select id=&#x22;selectInput&#x22; class=&#x22;form-control&#x22;&#x3E;
+                        &#x3C;option value=&#x22;1&#x22;&#x3E;Option 1&#x3C;/option&#x3E;
+                        &#x3C;option value=&#x22;2&#x22;&#x3E;Option 2&#x3C;/option&#x3E;
+                        &#x3C;option value=&#x22;3&#x22;&#x3E;Option 3&#x3C;/option&#x3E;
+                    &#x3C;/select&#x3E;
+                &#x3C;/div&#x3E;
+                
+                &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+                    &#x3C;label&#x3E;Gender:&#x3C;/label&#x3E;&#x3C;br&#x3E;
+                    &#x3C;div class=&#x22;form-check form-check-inline&#x22;&#x3E;
+                        &#x3C;input class=&#x22;form-check-input&#x22; type=&#x22;radio&#x22; name=&#x22;gender&#x22; id=&#x22;man&#x22; value=&#x22;man&#x22;&#x3E;
+                        &#x3C;label class=&#x22;form-check-label&#x22; for=&#x22;man&#x22;&#x3E;Man&#x3C;/label&#x3E;
+                    &#x3C;/div&#x3E;
+                    &#x3C;div class=&#x22;form-check form-check-inline&#x22;&#x3E;
+                        &#x3C;input class=&#x22;form-check-input&#x22; type=&#x22;radio&#x22; name=&#x22;gender&#x22; id=&#x22;woman&#x22; value=&#x22;woman&#x22;&#x3E;
+                        &#x3C;label class=&#x22;form-check-label&#x22; for=&#x22;woman&#x22;&#x3E;Woman&#x3C;/label&#x3E;
+                    &#x3C;/div&#x3E;
+                &#x3C;/div&#x3E;
+                
+                &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+                    &#x3C;label&#x3E;Checkbox:&#x3C;/label&#x3E;&#x3C;br&#x3E;
+                    &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;check1&#x22; value=&#x22;1&#x22;&#x3E;                   
+                &#x3C;/div&#x3E;
+                
+                &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+                    &#x3C;label for=&#x22;colorInput&#x22;&#x3E;Color Picker:&#x3C;/label&#x3E;
+                    &#x3C;input type=&#x22;color&#x22; id=&#x22;colorInput&#x22; class=&#x22;form-control&#x22;&#x3E;
+                &#x3C;/div&#x3E;
+                
+                &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+                    &#x3C;label for=&#x22;dateInput&#x22;&#x3E;Date Picker:&#x3C;/label&#x3E;
+                    &#x3C;input type=&#x22;date&#x22; id=&#x22;dateInput&#x22; class=&#x22;form-control&#x22;&#x3E;
+                &#x3C;/div&#x3E;
+                
+                &#x3C;div class=&#x22;form-group&#x22;&#x3E;
+                    &#x3C;label for=&#x22;rangeInput&#x22;&#x3E;Range Slider:&#x3C;/label&#x3E;
+                    &#x3C;input type=&#x22;range&#x22; id=&#x22;rangeInput&#x22; min=&#x22;0&#x22; max=&#x22;100&#x22; class=&#x22;form-control&#x22;&#x3E;
+                &#x3C;/div&#x3E;
+               
+                &#x3C;button type=&#x22;submit&#x22; class=&#x22;btn btn-primary&#x22;&#x3E;Submit&#x3C;/button&#x3E;
+            &#x3C;/form&#x3E;
+            
+            &#x3C;details&#x3E;
+                &#x3C;summary&#x3E;Click to see more details&#x3C;/summary&#x3E;
+                &#x3C;p&#x3E;This is additional content hidden inside a &#x26;lt;details&#x26;gt; &#x3C;br/&#x3E;
+                element. Click on the summary to toggle visibility.&#x3C;/p&#x3E;
+            &#x3C;/details&#x3E;
+            </code>
+        </pre>
+      </aside>
+    </main>
+
+    <footer>
+        <h4>Footer</h4>
+        <p>
+            ©T-LIVE-CODE
+        </p>
+        
+    </footer>
+    <script>hljs.highlightAll();</script>
+</body></html>
